@@ -1,0 +1,10 @@
+# custom_group.ini — per-channel group override keyed by x-channelID.
+# Consumed by channelparser.py (loaded relative to the script directory).
+# Inline comments after '#' are stripped.
+
+[customgroup]
+7223 = RM-SPORTS #mlb network
+20029 = RM-NEWS #fox news
+20030 = RM-NEWS #cnn
+20033 = RM-NEWS #msnbc
+20049 = RM-NEWS #bloomberg

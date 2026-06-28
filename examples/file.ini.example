@@ -1,0 +1,21 @@
+# file.ini — match rules and forced channel-number assignments.
+# Consumed by channelparser.py (config.ini -> [Paths] file_path).
+#
+# [Matchrules] rewrite incoming channel names before matching. Each value is a
+# Python tuple "old","new" applied as a string replace (see apply_match_rules()).
+# [Channels] pins a normalized channel name (optionally name::group) to a fixed
+# x-channelID. Names are lowercased.
+
+[Matchrules]
+1 = "USA |","USA -"
+2 = "DEPORTES - TUDN |","DEPORTES - TUDN -"
+
+[Channels]
+ufc fight pass hd = 8000
+ufc live 1 = 8001
+abc ny = 8011
+cbs ny = 8012
+nbc ny = 8013
+fox ny = 8014
+# name::group form pins a channel only within a specific group title
+espn hd::US Sports = 8100

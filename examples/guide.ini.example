@@ -1,0 +1,17 @@
+# guide.ini — saved EPG metadata per channel, keyed by x-channelID.
+# channelparser.py saves entries here (save_guide_entry) and restores them back
+# onto xepg.json (restore_guide_entry) so manual EPG mappings survive refreshes.
+
+[8000]
+x-name = UFC Fight Pass HD
+x-mapping = 120_Minutes
+x-xmltv-file = xTeVe Dummy
+tvg-logo = https://example.com/logos/ufc-fight-pass.png
+x-group-title = RM-UFC
+
+[8011]
+x-name = ABC New York
+x-mapping = WABC
+x-xmltv-file = lineup.xml
+tvg-logo = https://example.com/logos/abc.png
+x-group-title = RM-LOCALS

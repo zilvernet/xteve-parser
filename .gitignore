@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Live xTeVe runtime data — never commit
+data/
+backup/
+cache/
+log/
+monitor/
+*.log
+*.db
+*.bak
+
+# xTeVe state / secrets
+settings.json
+urls.json
+xepg.json
+pms.json
+authentication.json
+
+# Local channel config (use examples/*.example as templates)
+file.ini
+guide.ini
+file_group.ini
+custom_group.ini
+
+# Editor / OS cruft
+*.swp
+.DS_Store

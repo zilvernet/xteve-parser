@@ -1,0 +1,12 @@
+# file_group.ini — group rename map. Consumed by channelparser.py
+# (config.ini -> [Paths] group_file_path). Any channel whose x-group-title
+# matches a key is renamed to the value (Step 1: Group Rename Logic).
+
+[groups]
+US Entertainment = RM-ENTERT
+UK Entertainment = RM-ENTERT
+Music = RM-MUSIC
+US Sports = RM-SPORTS
+US Spanish = RM-LATIN
+Live Sports = RM-SPORTS
+UK Sports = RM-SPORTS-UK

@@ -1,0 +1,19 @@
+#
+# * * * * *
+# | | | | |
+# | | | | +- - - - day of week (0 - 6) (Sunday=0)
+# | | | +- - - - - month (1 - 12)
+# | | +- - - - - - day of month (1 - 31)
+# | +- - - - - - - hour (0 - 23)
+# +- - - - - - - - minute (0 - 59)
+#
+# To create your lineups for guide2go, zap2it and tvguide please see the examples below to create them with the guide2conf utility.
+# Usage: /home/xteve/bin/guide2conf -h
+#
+# Guide2go:
+# /home/xteve/bin/guide2conf --username <username> --password <password> --max-days=7 --name <lineup_name>
+# Zap2it & TVGuide:
+# /home/xteve/bin/guide2conf --username <username@domain.com> --password <password> --max-days=7 --name <lineup_name>
+#
+# Run the m3uFilter script daily at 12:00 AM
+00  00  *  *  *   /bin/bash /home/xteve/conf/scripts/m3uFilter.sh
